@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,15 +17,42 @@
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            background: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            background: linear-gradient(145deg, #ffffff, #e6e6e6);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            text-align: center;
         }
         h1 {
-            color: #444;
+            color: #555;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+        .container:hover {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0.5;
+            }
+            to {
+                opacity: 1;
+            }
         }
         p {
-            margin: 10px 0;
+            margin: 20px 0;
+            font-size: 1.2em;
+            color: #666;
         }
     </style>
 </head>
@@ -33,7 +60,8 @@
     <div class="container">
         <h1>조윤택 지아-지</h1>
 
-        <img src="https://meng-joo.github.io/meng-site/image/KakaoTalk_20241220_135637592.jpg">
+        <img src="/image/KakaoTalk_20241220_135637592.jpg" alt="조윤택 지아-지">
+        <p>Welcome to the beautiful profile of 조윤택 지아-지!</p>
     </div>
 </body>
 </html>
